@@ -93,3 +93,5 @@ excelidraw/
 ```bash
 pnpm install
 pnpm dev
+
+Made with ❤️ by Krishna Soni
