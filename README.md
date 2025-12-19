@@ -1,89 +1,95 @@
-# excelidraw
- Built a collaborative real-time drawing canvas with smooth freehand strokes and responsive performance. • Implemented pan/zoom and canvas optimizations, supporting up to 10× zoom during testing.
-=======
-# Turborepo starter
+#  ExceliDraw — Collaborative Whiteboarding Application
 
-This is an official starter Turborepo.
+ExceliDraw is a collaborative, canvas-based drawing application inspired by tools like Excalidraw.  
+The project focuses on smooth rendering, pan/zoom performance, and scalable frontend architecture.
 
-## Using this example
+Built as part of a hands-on learning journey to understand **interactive UIs, canvas optimizations, and real-time system design**.
 
-Run the following command:
+---
 
-```sh
-npx create-turbo@latest
-```
+##  Key Highlights
 
-## What's inside?
+-  Smooth freehand drawing using HTML Canvas
+-  Pan & zoom support (tested up to **10× zoom**)
+-  Optimized canvas rendering for responsive performance
+-  Clean, distraction-free dark UI
+-  Scalable monorepo architecture using Turborepo
 
-This Turborepo includes the following packages/apps:
+---
 
-### Apps and Packages
+## 🛠️ Tech Stack
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+### Frontend
+- Next.js
+- TypeScript
+- Tailwind CSS
+- HTML Canvas API
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Backend (In Progress)
+- Node.js
+- Express.js
+- WebSockets (for real-time collaboration)
 
-### Utilities
+### Tooling & Architecture
+- Turborepo (monorepo setup)
+- pnpm
+- ESLint & Prettier
+- Modular package-based structure
 
-This Turborepo has some additional tools already setup for you:
+---
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## 📂 Project Structure
 
-### Build
+excelidraw/
+├── apps/
+│ ├── web # Main drawing application (Next.js)
+│ └── docs # Documentation / demo app
+├── packages/
+│ ├── ui # Shared UI components
+│ ├── eslint # Shared linting config
+│ └── tsconfig # Shared TypeScript config
+├── turbo.json
+└── README.md
 
-To build all apps and packages, run the following command:
 
-```
-cd my-turborepo
-pnpm build
-```
+---
 
-### Develop
+## 📸 Screenshots
 
-To develop all apps and packages, run the following command:
+### Landing Page
+<img width="1149" height="625" alt="Screenshot 2025-12-19 140423" src="https://github.com/user-attachments/assets/f214127d-24dd-4716-92ca-6a5bbdccb10d" />
 
-```
-cd my-turborepo
+
+### Drawing Canvas
+<img width="826" height="800" alt="Screenshot 2025-12-19 140639" src="https://github.com/user-attachments/assets/04087fa0-cf98-4d08-99e5-22778b9c296f" />
+
+
+---
+
+## Project Status
+
+- ✅ Drawing tools implemented
+- ✅ Pan & zoom functionality
+- ✅ Canvas performance optimizations
+- ? Real-time collaboration — **in progress**
+- ? Persistence & auth — planned
+
+> This repository reflects an **actively evolving project**, not a one-day demo.
+
+---
+
+##  What I Learned
+
+- Deep understanding of the Canvas rendering pipeline
+- Handling pan/zoom transformations efficiently
+- Structuring large frontend apps using monorepos
+- Writing scalable, maintainable TypeScript code
+- Thinking about real-time collaboration at a system level
+
+---
+
+##  Getting Started (Local Setup)
+
+```bash
+pnpm install
 pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
-
-Made with ❤️ by Krishna Soni
