@@ -1,6 +1,6 @@
 #  CanvaSync – WebSocket-Based Collaborative Drawing Platform
 
-ExceliDraw is a collaborative, canvas-based drawing application inspired by tools like Excalidraw.  
+CanvaSync is a collaborative, canvas-based drawing application inspired by tools like Excalidraw.  
 The project focuses on smooth rendering, pan/zoom performance, and scalable frontend architecture.
 
 Built as part of a hands-on learning journey to understand **interactive UIs, canvas optimizations, and real-time system design**.
